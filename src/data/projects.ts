@@ -7,7 +7,7 @@ import type { Project, ProjectCategory } from "@/types";
 export const projects: Project[] = [
   {
     id: "1",
-    slug: "Curepath-AI",
+    slug: "curepath-ai",
     title: "AI-Based Healthcare Assistant",
     shortDescription:
       "Built an AI-powered healthcare platform using the MERN stack that delivers intelligent symptom analysis, disease prediction, and personalized healthcare recommendations.",
@@ -40,7 +40,7 @@ learned: [
   },
   {
     id: "2",
-    slug: "Modern Gym Website",
+    slug: "modern-gym-website",
     title: "Modern Gym Website",
    shortDescription:
   "AI-powered fitness platform with personalized workouts, nutrition guidance, and an intelligent virtual trainer.",
@@ -74,7 +74,7 @@ learned: [
   },
   {
     id: "3",
-    slug: "AI Video Summarizer",
+    slug: "ai-video-summarizer",
     title: "Ai Video Summarizer",
     shortDescription:
   "AI-powered video summarization tool that converts long videos into concise, meaningful summaries.",
