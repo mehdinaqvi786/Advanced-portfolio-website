@@ -1,0 +1,9 @@
+export { AdminShell } from "@/components/admin/admin-shell";
+export { AdminSidebar } from "@/components/admin/sidebar";
+export { AdminTopbar } from "@/components/admin/topbar";
+export { AdminPageSkeleton } from "@/components/admin/admin-page-skeleton";
+export { LogoutButton } from "@/components/admin/logout-button";
+export { SessionWatcher } from "@/components/admin/session-watcher";
+export { StatsCard } from "@/components/admin/stats-card";
+export { RecentContactsTable } from "@/components/admin/recent-contacts-table";
+export { EmptyState } from "@/components/admin/empty-state";

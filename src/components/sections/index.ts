@@ -1,0 +1,10 @@
+export { HeroSection } from "@/components/sections/hero";
+export { AboutSection } from "@/components/sections/about";
+export { FeaturedProjectsSection } from "@/components/sections/featured-projects";
+export { OtherProjectsSection } from "@/components/sections/other-projects";
+export { SkillsSection } from "@/components/sections/skills";
+export { TechStackSection } from "@/components/sections/tech-stack";
+export { ExperienceSection } from "@/components/sections/experience";
+export { EducationSection } from "@/components/sections/education";
+export { JourneySection } from "@/components/sections/journey";
+export { ContactSection } from "@/components/sections/contact";

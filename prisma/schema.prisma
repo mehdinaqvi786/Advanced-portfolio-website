@@ -1,0 +1,54 @@
+// Prisma schema — Supabase PostgreSQL
+// Runtime URL: DATABASE_URL (pooled) via @prisma/adapter-pg
+// CLI / migrations: DIRECT_URL via prisma.config.ts
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ContactStatus {
+  Pending
+  Completed
+  Resolved
+  Done
+}
+
+enum Role {
+  ADMIN
+}
+
+model Contact {
+  id        String        @id @default(cuid())
+  name      String        @db.VarChar(80)
+  email     String        @db.VarChar(255)
+  subject   String        @db.VarChar(120)
+  message   String        @db.Text
+  status    ContactStatus @default(Pending)
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+  @@map("contacts")
+}
+
+/// App profile linked to Supabase Auth (auth.users.id).
+/// Only one ADMIN profile is allowed (enforced by seed + partial unique index).
+model Profile {
+  id         String   @id @default(cuid())
+  authUserId String   @unique @map("auth_user_id") @db.Uuid
+  name       String   @db.VarChar(120)
+  email      String   @unique @db.VarChar(255)
+  role       Role     @default(ADMIN)
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  @@index([role])
+  @@map("profiles")
+}
