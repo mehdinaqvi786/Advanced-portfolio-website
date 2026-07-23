@@ -49,7 +49,7 @@ fullDescription:
   "GymAI is a modern fitness web application that helps users achieve their fitness goals through personalized workout plans, nutrition tracking, progress monitoring, and an AI-powered trainer bot that provides real-time guidance, exercise recommendations, and answers to fitness-related questions. The platform focuses on delivering an engaging, responsive, and user-friendly experience.",   
    technologies: ["React",  "Tailwind CSS", "Ai"],
     github: "https://github.com/mehdinaqvi786/react_project",
-    //liveDemo: "https://react-project-coral-zeta.vercel.app/",
+    liveDemo: "https://react-project-coral-zeta.vercel.app/",
     featured: true,
     category: "social",
     priority: 2,
