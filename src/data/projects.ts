@@ -105,6 +105,62 @@ learned: [
   "Developing efficient video processing pipelines with a user-friendly interface",
 ],
   },
+
+{
+  id: "4",
+  slug: "lovegram-platform",
+  title: "LoveGram",
+  shortDescription:
+    "A modern AI-powered dating and matchmaking platform designed to help people discover meaningful connections through smart matching and interactive features.",
+
+  fullDescription:
+    "LoveGram is a full-stack social matchmaking platform built with Next.js, TypeScript, MongoDB, Clerk Authentication, Tailwind CSS, and modern web technologies. It provides a secure and engaging experience with user authentication, profile management, real-time messaging, AI-powered compatibility matching, and interactive features that help users build genuine connections.",
+
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "MongoDB",
+    "Clerk",
+    "Tailwind CSS",
+    "Prisma",
+    "Vercel"
+  ],
+
+  github: "https://github.com/mehdinaqvi786/lovegram-platform",
+
+  liveDemo: "https://lovegram-platform.vercel.app",
+
+  featured: true,
+  category: "social",
+  priority: 2,
+  year: 2026,
+
+  features: [
+    "Secure authentication with Clerk",
+    "AI-powered compatibility matching",
+    "User profile creation and customization",
+    "Real-time messaging system",
+    "Passport and profile verification",
+    "Smart recommendations based on user preferences",
+    "Responsive design optimized for desktop and mobile",
+    "Modern dashboard with account settings"
+  ],
+
+  challenges: [
+    "Integrating Clerk authentication with MongoDB",
+    "Managing secure environment variables and deployment",
+    "Designing scalable database models for user relationships",
+    "Building a responsive and interactive user experience"
+  ],
+
+  learned: [
+    "Building production-ready applications with Next.js and TypeScript",
+    "Deploying full-stack applications on Vercel",
+    "Integrating MongoDB Atlas and Clerk Authentication",
+    "Managing secure authentication and scalable backend architecture",
+    "Implementing modern UI/UX with Tailwind CSS"
+  ],
+},  
   
 ];
 
